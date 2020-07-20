@@ -25,7 +25,7 @@ SECRET_KEY = 'p8^&rxltxzqayba6m=gsu_--8s_fe+d!gy9pxz+bz4$lvm41b='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['178.62.116.125']
+ALLOWED_HOSTS = ['127.0.0.1','178.62.116.125']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'gawebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
